@@ -80,6 +80,6 @@ test:
 #
 production:
   <<: *default
-  database: laurj_com_production
-  username: laurj_com
-  password: <%= ENV['LAURJ_COM_DATABASE_PASSWORD'] %>
+  database: laurj_com
+  username: rails
+  password: <%= ENV['APP_DATABASE_PASSWORD'] %>
