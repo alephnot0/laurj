@@ -50,6 +50,12 @@ main {
 	background: #fff;
 }
 
+img{
+	margin: 0 auto;
+	display: block;
+
+}
+
 .innertube {
 	margin: 15px; /* Provides padding for the content */
 }
@@ -109,6 +115,7 @@ nav ul li.active a, #top-nav ul li a:hover {
 	height: 100%;
 	width: 100%;
 }
+
 </style>
 
 <script type="text/javascript">
@@ -140,17 +147,21 @@ nav ul li.active a, #top-nav ul li a:hover {
 		<nav>
 			<div class="innertube">
 				<ul>
-					<li><a href="#">RSVP</a></li>
-					<li><a href="#">Welcome</a></li>
+					<li><a href="#">Our Story</a></li>
 					<li><a href="#">Details</a></li>
 					<li><a href="#">Event</a></li>
 					<li><a href="#">Itinerary</a></li>
+					<li><a href="#">Registry</a></li>
 				</ul>
 			</div>
 		</nav>
 	</header>
 
-	<main>
+	<main> 
+	<div class="center_image">
+	<%= image_tag "Piggyback.jpg", size: "702x468", alt: "Piggyback"%>
+	</div>
+
 	<div class="innertube">
 
 		<h2>Heading</h2>
