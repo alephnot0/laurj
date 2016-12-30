@@ -9,6 +9,167 @@
   </head>
 
   <body>
+  <style type="text/css">
+body {
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	height: 100%;
+	max-height: 100%;
+	font-family: Sans-serif;
+	line-height: 1.5em;
+}
+
+#header {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100px;
+	overflow: hidden;
+	/* Disables scrollbars on the navigation frame. To enable scrollbars, change "hidden" to "scroll" */
+	background: #9039AD;
+}
+
+#footer {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	width: 100%;
+	height: 50px;
+	background: #9039AD;
+	text-align: right;
+	overflow: hidden;
+	padding: 0 10px;
+}
+
+#logo {
+	padding: 10px;
+	float: left;
+}
+
+main {
+	position: fixed;
+	top: 100px; /* Set this to the height of the header */
+	left: 0;
+	right: 0;
+	bottom: 50px;
+	overflow: auto;
+	background: #fff;
+}
+
+img {
+	margin: 0 auto;
+	display: block;
+	padding: 0px;
+}
+
+.innertube {
+	margin: 15px; /* Provides padding for the content */
+}
+
+p {
+	color: #555;
+}
+
+h1 {
+	font-family: cursive;
+	font-size: 30px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 500;
+	line-height: 30px;
+	color: #FFFFFF;
+}
+
+h2 {
+	font-family: cursive;
+	font-size:25px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 400;
+	line-height: 25px;
+	color: #000000;
+	text-align: center;
+}
+
+h5 {
+	font-family: Sans-serif;
+	font-size: 12px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 500;
+	line-height: 30px;
+	color: #FFFFFF;
+}
+
+/* Menu */
+nav {
+	margin: 0 auto;
+	padding: 0;
+	float: right;
+}
+
+nav ul {
+	list-style: none;
+	padding: 0;
+	float: left;
+}
+
+nav ul li {
+	margin: 0;
+	padding: 0 0 0 8px;
+	float: left;
+}
+
+nav ul li a {
+	display: block;
+	margin: 0;
+	padding: 8px 20px;
+	color: #FFFFFF;
+	text-decoration: none;
+}
+
+nav ul li.active a, #top-nav ul li a:hover {
+	color: #d3d3f9;
+}
+
+/*IE6 fix*/
+* html body {
+	padding: 100px 0 0 0;
+	/* Set the first value to the height of the header */
+}
+
+* html main {
+	height: 100%;
+	width: 100%;
+}
+</style>
+  <header id="header">
+		<div id="logo">
+			<h1>Lauren & RJ</h1>
+		</div>
+		<nav>
+			<div class="innertube">
+				<ul>
+					<li><a href="/">Our Story</a></li>
+					<li><a href="/details/index">Details</a></li>
+					<li><a href="/event/index">Event</a></li>
+					<li><a href="/itinerary/index">Itinerary</a></li>
+					<li><a href="/registry/index">Registry</a></li>
+				</ul>
+			</div>
+		</nav>
+	</header>
+  
     <%= yield %>
+    
+    
+  	<footer id="footer">
+		<div>
+			<!--<p>Find me in app/views/simple/index.html.erb</p>-->
+			<h5>Questions? Contact us at richard.j.seibert@gmail.com!</h5>
+		</div>
+	</footer>
   </body>
 </html>

@@ -1,4 +1,14 @@
 Rails.application.routes.draw do
+  get 'registry/index'
+
+  get 'itinerary/index'
+
+  get 'event/index'
+
+  get 'details/index'
+
+  get 'story/index'
+
   get 'simple/index'
 
   get 'welcome/index'
