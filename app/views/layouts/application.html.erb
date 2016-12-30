@@ -1,15 +1,14 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Laurj</title>
-    <%= csrf_meta_tags %>
+<head>
+<title>Laurj</title>
+<%= csrf_meta_tags %> 
+<%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %> 
+<%=javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+</head>
 
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
-  </head>
-
-  <body>
-  <style type="text/css">
+<body>
+	<style type="text/css">
 body {
 	margin: 0;
 	padding: 0;
@@ -82,9 +81,14 @@ h1 {
 	color: #FFFFFF;
 }
 
+h1 a {
+	color: #FFFFFF;
+	text-decoration: none;
+}
+
 h2 {
 	font-family: cursive;
-	font-size:25px;
+	font-size: 25px;
 	font-style: normal;
 	font-variant: normal;
 	font-weight: 400;
@@ -145,14 +149,16 @@ nav ul li.active a, #top-nav ul li a:hover {
 	width: 100%;
 }
 </style>
-  <header id="header">
+	<header id="header">
 		<div id="logo">
-			<h1>Lauren & RJ</h1>
+			<h1>
+				<a href="/">Lauren & RJ</a>
+			</h1>
 		</div>
 		<nav>
 			<div class="innertube">
 				<ul>
-					<li><a href="/">Our Story</a></li>
+					<li><a href="/story/index">Our Story</a></li>
 					<li><a href="/details/index">Details</a></li>
 					<li><a href="/event/index">Event</a></li>
 					<li><a href="/itinerary/index">Itinerary</a></li>
@@ -161,15 +167,15 @@ nav ul li.active a, #top-nav ul li a:hover {
 			</div>
 		</nav>
 	</header>
-  
-    <%= yield %>
-    
-    
-  	<footer id="footer">
+
+	<%= yield %>
+
+
+	<footer id="footer">
 		<div>
 			<!--<p>Find me in app/views/simple/index.html.erb</p>-->
 			<h5>Questions? Contact us at richard.j.seibert@gmail.com!</h5>
 		</div>
 	</footer>
-  </body>
+</body>
 </html>
