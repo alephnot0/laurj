@@ -5,3 +5,4 @@ LOG:  autovacuum launcher started
 FATAL:  database "laurj_com_development" does not exist
 FATAL:  database "rj" does not exist
 FATAL:  database "laurj_com_development" does not exist
+FATAL:  database "laurj_com_test" does not exist
