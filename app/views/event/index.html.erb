@@ -6,52 +6,43 @@ div.map {
 
 div.map iframe {
 	margin: 0;
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	margin-right: -50%;
-	margin-top: 700px;
-	transform: translate(-50%, -50%);
+	position: relative;
 }
 
 div.map iframe.church {
 	margin: 0;
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	margin-right: -50%;
-	margin-top: 225px;
-	transform: translate(-50%, -50%);
+	position: relative;
+}
+
+p {
+	position: relative;
+	text-align: left;
 }
 </style>
 
 <main>
-<p>Ceremony at St. Matthias Church -- Time: TBD</p>
-<div>
-	<div><%= image_tag "StMatthias.jpg", size: "702x468", alt:
-		"StMatthias", align: "left"%></div>
-
-	<div class="map">
-		<iframe class="church"
-			src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3033.8761007365865!2d-74.50555418492172!3d40.50012275848784!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c3c12d6be2bcbb%3A0x2a901dc7b7ce25c3!2sSt+Matthias+Catholic+Church!5e0!3m2!1sen!2sus!4v1483151567704"
-			width="600" height="450" frameborder="0" style="border: 4px"
-			allowfullscreen></iframe>
-	</div>
-</div>
-<div>
-	<div><%= image_tag "Palace.jpg", size: "702x468", alt: "Palace",
-		align: "left"%></div>
-
-
-	<div class="map">
-		<iframe
-			src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3032.4850884279267!2d-74.5362408846006!3d40.53087087935195!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c3c0ee797afc3d%3A0xa4987fb9c5ae2a2c!2sThe+Palace+At+Somerset+Park!5e0!3m2!1sen!2sus!4v1483119348540"
-			width="600" height="450" frameborder="0" style="border: 4px"
-			allowfullscreen></iframe>
-	</div>
-</div>
-
-
-
-
+<table>
+	<tr>
+		<td><p>Ceremony at St. Matthias Church -- Time: TBD</p></td>
+	</tr>
+	<tr>
+		<td><%= image_tag "StMatthias.jpg", size: "702x468", alt:
+			"StMatthias", align: "left"%> <iframe class="church"
+				src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3033.8761007365865!2d-74.50555418492172!3d40.50012275848784!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c3c12d6be2bcbb%3A0x2a901dc7b7ce25c3!2sSt+Matthias+Catholic+Church!5e0!3m2!1sen!2sus!4v1483151567704"
+				width="600" height="450" frameborder="0" style="border: 4px"
+				allowfullscreen></iframe>
+		<td>
+	</tr>
+	<tr>
+		<td><p>Reception at The Palace at Somerset Park @ 7pm</p></td>
+	</tr>
+	<tr>
+		<td><%= image_tag "Palace.jpg", size: "702x468", alt: "Palace",
+			align: "left"%> <iframe
+				src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3032.4850884279267!2d-74.5362408846006!3d40.53087087935195!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c3c0ee797afc3d%3A0xa4987fb9c5ae2a2c!2sThe+Palace+At+Somerset+Park!5e0!3m2!1sen!2sus!4v1483154488591"
+				width="600" height="450" frameborder="0" style="border: 0"
+				allowfullscreen></iframe>
+		</td>
+	</tr>
+</table>
 </main>
