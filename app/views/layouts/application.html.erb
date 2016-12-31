@@ -5,6 +5,7 @@
 <%= csrf_meta_tags %> 
 <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %> 
 <%=javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+<link href='//fonts.googleapis.com/css?family=Coming Soon' rel='stylesheet'>
 </head>
 
 <body>
@@ -17,6 +18,11 @@ body {
 	max-height: 100%;
 	font-family: Sans-serif;
 	line-height: 1.5em;
+}
+
+p {
+    font-family: 'Coming Soon';
+    font-size: 22px;
 }
 
 #header {
@@ -65,10 +71,6 @@ img {
 
 .innertube {
 	margin: 15px; /* Provides padding for the content */
-}
-
-p {
-	color: #555;
 }
 
 h1 {
