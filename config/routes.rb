@@ -13,6 +13,8 @@ Rails.application.routes.draw do
   get 'story/index'
 
   get 'simple/index'
+  
+  get 'hotels/index'
 
   get 'welcome/index'
   root 'simple#index'
